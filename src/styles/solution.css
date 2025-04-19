@@ -1,0 +1,36 @@
+#solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 4rem;
+    gap: 5.75rem;
+}
+
+#solution header {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    max-width: 33rem;
+}
+
+#solution strong {
+    color: var(--primary-color);
+    font-weight: var(--fw-bold);
+}
+
+#solution .even-columns {
+    gap: 3rem;
+}
+
+
+  @media (width > 1280px) {
+    #solution {
+        padding-block: 7.5rem;
+    }
+
+    #solution header > span > h2 {
+        font-size: var(--fs-sm);
+        color: var(--primary-color);
+    }
+}
+  
