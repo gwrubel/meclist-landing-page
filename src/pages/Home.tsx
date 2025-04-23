@@ -11,7 +11,7 @@ import HeroRectangleOne from "../assets/imgs/retangulo1.png";
 import HeroRectangleTwo from "../assets/imgs/retangulo2.png";
 import job from "../assets/icons/Job.svg";
 import chart from "../assets/icons/chart.svg";
-import bell from "../assets/icons/bell.svg";
+import bell from "../assets/icons/Bell.svg";
 import "../styles/hero.css";
 import "../styles/solution.css";
 import CardCustom from "../components/CardCustom";
