@@ -9,7 +9,7 @@ import "../styles/utility.css";
 import Button from "../components/Button";
 import HeroRectangleOne from "../assets/imgs/retangulo1.png";
 import HeroRectangleTwo from "../assets/imgs/retangulo2.png";
-import job from "../assets/icons/job.svg";
+import job from "../assets/icons/Job.svg";
 import chart from "../assets/icons/chart.svg";
 import bell from "../assets/icons/bell.svg";
 import "../styles/hero.css";
