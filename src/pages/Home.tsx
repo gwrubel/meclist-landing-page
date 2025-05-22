@@ -24,7 +24,7 @@ import ChefeMecanica from "../assets/imgs/chefe-mecanica.jpg";
 import Cliente2 from "../assets/imgs/cliente-02.jpg";
 import Mecanico2 from "../assets/imgs/mecanico-02.jpg";
 import '../styles/pricing.css'
-import PricingCard from "../components/pricingCard";
+import PricingCard from "../components/PricingCard";
 import pc from "../assets/imgs/pc.svg";
 import celular from "../assets/imgs/celular.svg";
 import '../styles/functions.css';
