@@ -1,0 +1,30 @@
+.carousel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 12.5rem;
+    background: var(--bg-color);
+    border-radius: 0.375rem;
+    padding: 1.625rem;
+    text-align: center;
+    gap: 1rem;
+    > img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+      }
+      .estrelas {
+        display: flex;
+        margin-top: auto;
+      }
+
+      .infos-card {
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-bold);
+      }
+      
+      .infos-card :first-child {
+        color: var(--primary-color);
+        font-size: var(--fs-base);
+      }
+}
