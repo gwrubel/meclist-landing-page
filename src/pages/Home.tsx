@@ -56,7 +56,13 @@ export default function Home() {
                                 <a href="#solution">Soluções</a>
                             </li>
                             <li>
-                                <a href="#Funcionalidades">Funcionalidades</a>
+                                <a href="#testimonials">Depoimentos</a>
+                            </li>
+                            <li>
+                                <a href="#pricing">Preços</a>
+                            </li>
+                            <li>
+                                <a href="#functions">Funcionalidades</a>
                             </li>
                             <li>
                                 <a href="#contact">Contato</a>
@@ -85,6 +91,9 @@ export default function Home() {
                                         </li>
                                         <li>
                                             <a href="#pricing">Preços</a>
+                                        </li>
+                                        <li>
+                                            <a href="#functions">Funcionalidades</a>
                                         </li>
                                         <li>
                                             <a href="#contact">Contato</a>
@@ -121,7 +130,7 @@ export default function Home() {
                         Automatize seus checklists, acompanhe serviços em tempo real e melhore a comunicação com seus clientes e mecânicos.
                     </p>
                     <div className="flex gap-1" id="hero-cta">
-                        <span><Button text="Cadastre-se" /></span>
+                        <span><Button text="Venha ser MecList" /></span>
                         <span className="desktop-only">
                             <Button text="Saiba mais" secondary />
                         </span>

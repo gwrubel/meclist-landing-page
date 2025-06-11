@@ -59,7 +59,7 @@
 
 @media (width >= 1280px) {
     .container {
-        --max-width: 1050px;
+        --max-width: 1400px;
     }
 
     .desktop-only {

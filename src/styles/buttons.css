@@ -7,6 +7,7 @@
     padding-block: 0.825rem;
     padding-inline: 1.5rem;
     border-radius: 0.4rem;
+    
     cursor: pointer;
     border: solid transparent 0.15rem;
     transition: ease-in-out 0.2s;
