@@ -29,10 +29,17 @@ import pc from "../assets/imgs/pc.svg";
 import celular from "../assets/imgs/celular.svg";
 import '../styles/functions.css';
 import checkbox from '../assets/icons/checkbox.svg'
-
+import '../styles/contact.css';
+import ContactForm from "../components/ContactForm";
+import logoFooter from "../assets/icons/logo-footer.svg";
+import instagram from "../assets/icons/instagram.svg";
+import facebook from "../assets/icons/facebook.svg";
+import youtube from "../assets/icons/youtube.svg";
+import '../styles/footer.css';
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
     useEffect(() => {
         const html = document.querySelector("html");
         if (html) {
@@ -130,9 +137,15 @@ export default function Home() {
                         Automatize seus checklists, acompanhe serviços em tempo real e melhore a comunicação com seus clientes e mecânicos.
                     </p>
                     <div className="flex gap-1" id="hero-cta">
-                        <span><Button text="Venha ser MecList" /></span>
+                        <span><Button text="Venha ser MecList" onclick={() => {
+                            const section = document.getElementById('contact');
+                            section?.scrollIntoView({ behavior: 'smooth' });
+                        }} /></span>
                         <span className="desktop-only">
-                            <Button text="Saiba mais" secondary />
+                            <Button text="Saiba mais" secondary onclick={()=> {
+                                const section = document.getElementById('functions');
+                                section?.scrollIntoView({ behavior: 'smooth' });
+                            }} />
                         </span>
                     </div>
                 </div>
@@ -345,6 +358,53 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <section id="contact" className="contact-form">
+                <ContactForm />
+            </section>
+
+            <footer className="site-footer">
+        <div className="footer-content container">
+            <div className="footer-brand">
+                <img src={logoFooter} alt="logo" className="logo-footer" />
+                <div className="social-media">
+                    <a href="#" aria-label="Instagram"><img src={instagram} alt="instagram logo" /></a>
+                    <a href="#" aria-label="Facebook"><img src={facebook} alt="facebook logo" /></a>
+                    <a href="#" aria-label="YouTube"><img src={youtube} alt="youtube logo" /></a>
+                </div>
+            </div>
+            <nav className="footer-nav">
+                <div className="footer-column">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Faça parte do time</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div className="footer-column">
+                    <h3>Funcionalidades</h3>
+                    <ul>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Análise de dados</a></li>
+                        <li><a href="#">Boot discord</a></li>
+                    </ul>
+                </div>
+                <div className="footer-column">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">iOS & Android</a></li>
+                        <li><a href="#">Teste a Demo</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div className="footer-bottom">
+            <p>Feito na aula de Programação Web &copy;2025 Gabriel Wrubel - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
         </>
     )
