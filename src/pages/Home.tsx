@@ -46,7 +46,7 @@ export default function Home() {
             html.style.overflow = showMobileMenu ? "hidden" : "auto";
         }
     }, [showMobileMenu]);
-
+    const handleMobileLinkClick = () => setShowMobileMenu(false);
 
 
     return (
@@ -78,8 +78,7 @@ export default function Home() {
                     </div>
                     <div className="desktop-only">
                         <div className="flex items-center">
-                            <a className="reverse-color ml-lg" href="">Login</a>
-                            <Button text="Cadastre-se" />
+                            <Button text="Área do Login" />
                         </div>
                     </div>
                     <div className="mobile-menu">
@@ -87,25 +86,14 @@ export default function Home() {
                             <div className="mobile-menu-content">
                                 <div className="container flex">
                                     <ul>
-                                        <li>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#solution">Soluções</a>
-                                        </li>
-                                        <li>
-                                            <a href="#testimonials">Depoimentos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#pricing">Preços</a>
-                                        </li>
-                                        <li>
-                                            <a href="#functions">Funcionalidades</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contact">Contato</a>
-                                        </li>
-                                    </ul>
+  <li><a href="#hero" onClick={handleMobileLinkClick}>Home</a></li>
+  <li><a href="#solution" onClick={handleMobileLinkClick}>Soluções</a></li>
+  <li><a href="#testimonials" onClick={handleMobileLinkClick}>Depoimentos</a></li>
+  <li><a href="#pricing" onClick={handleMobileLinkClick}>Preços</a></li>
+  <li><a href="#functions" onClick={handleMobileLinkClick}>Funcionalidades</a></li>
+  <li><a href="#contact" onClick={handleMobileLinkClick}>Contato</a></li>
+</ul>
+
                                     <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
                                         <img src={close} alt="ícone fechar menu" width={24} height={24} />
                                     </span>
